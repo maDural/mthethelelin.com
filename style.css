@@ -1,0 +1,791 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0a9396, #94d2bd);
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: rgba(0,0,0,0.6);
+    padding: 15px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('../images/background.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box {
+    background: rgba(0,0,0,0.6);
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+.hero-box h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background: #ee9b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ca6702;
+}
+
+/* FORM STYLE */
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background: #ee9b00;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background: #ca6702;
+}
+
+/* Dashboard Cards */
+.cards {
+    padding: 40px;
+}
+
+.cards a {
+    display: inline-block;
+    padding: 25px;
+    margin: 15px;
+    background: white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #0a9396;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.cards a:hover {
+    transform: translateY(-5px);
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #0a9396;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+.login-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0a9396;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #005f73;
+}
+.register-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ee9b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #ca6702;
+}
+.reset-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: gray;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #555;
+}
+
+.login-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0a9396;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.login-btn:hover {
+    background: #005f73;
+}
+
+.home-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ee9b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.home-btn:hover {
+    background: #ca6702;
+}
+/* TOP HEADER BAR */
+.top-bar {
+    background: rgba(0,0,0,0.7);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+    background: #e63946;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #b71c1c;
+}
+
+/* TEXTAREA STYLE */
+.form-box textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    resize: none;
+    height: 80px;
+}
+
+/* SUCCESS MESSAGE */
+.success {
+    background: #2a9d8f;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* DASHBOARD LAYOUT */
+.dashboard-container {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+/* CARD CONTAINER */
+.dashboard-cards {
+    margin-top: 30px;
+}
+
+/* DASHBOARD CARDS */
+.card {
+    display: inline-block;
+    background: white;
+    color: #0a9396;
+    padding: 30px;
+    margin: 15px;
+    width: 200px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #e9f5f5;
+}
+
+/* HERO SECTION BACKGROUND */
+.hero {
+    height: 90vh;
+    background: url('../images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+/* HERO TEXT CONTAINER */
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+}
+
+/* TITLE */
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+/* PARAGRAPH */
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* BUTTON CONTAINER */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* BASE BUTTON */
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* PRIMARY BUTTON */
+.primary-btn {
+    background: #ee9b00;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #ca6702;
+}
+
+/* SECONDARY BUTTON */
+.secondary-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: black;
+}
+.reset-btn {
+    display: block;
+    margin-top: 10px;
+    color: #ffd166;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.reset-btn:hover {
+    text-decoration: underline;
+}
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #0a9396;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+/* TOP BAR FIXED LAYOUT */
+.top-bar {
+    background: rgba(0,0,0,0.7);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+}
+
+/* BACK BUTTON LEFT POSITION STYLE */
+.back-btn {
+    background: #457b9d;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back-btn:hover {
+    background: #1d3557;
+}
+
+/* CENTER TITLE */
+.top-bar h2 {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* LOGOUT BUTTON RIGHT */
+.logout-btn {
+    background: #e63946;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logout-btn:hover {
+    background: #b71c1c;
+}
+/* Make both links look like the register button */
+.btn-link, .btn-reset {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Login link - Solid green button */
+.btn-link {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-link:hover {
+    background-color: #45a049;
+}
+
+/* Reset Password link - Solid gray button */
+.btn-reset {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #5a6268;
+}
+/* Minimalist Buttons */
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.secondary-btn:hover {
+    background-color: #545b62;
+}
+/* Footer Styles - Medical/Healthcare Gradients */
+footer {
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gradient Option A: Blue to Teal (Medical/Trust theme) */
+footer.gradient-1 {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #0f8a9d 100%);
+}
+
+/* Gradient Option B: Green to Blue (Healthcare/Nature theme) */
+footer.gradient-2 {
+    background: linear-gradient(135deg, #134e5e 0%, #71b280 50%, #2b7a4b 100%);
+}
+
+/* Gradient Option C: Purple to Blue (Professional/Modern theme) */
+footer.gradient-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Gradient Option D: Dark Blue to Light Blue (Trust/Safety theme) */
+footer.gradient-4 {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+/* Gradient Option E: Medical Blue with Animation (Most Recommended) */
+footer.gradient-5 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #6b8cce 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+}
+
+/* Gradient Option F: Warm Medical (Soft & Welcoming) */
+footer.gradient-6 {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+
+footer p:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Animated gradient shift */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover effect for footer links */
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* For light-colored gradients (Option F) */
+footer.light-text {
+    color: #333;
+}
+
+footer.light-text a {
+    color: #333;
+}
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb4d);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+footer p:hover {
+    opacity: 1;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Make footer stick to bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Push footer to bottom */
+main, .hero, .content-wrapper {
+    flex: 1;
+}
+
+/* Alternative simple footer style (if you don't want gradient) */
+footer.simple {
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/* Circular Doctor Images */
+.team-photo {
+    background: 0;
+    border-radius: 75%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.doctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-card {
+    text-align: center;
+}
+/* Story Section Styles - Fixed */
+.story-section {
+    background: #f8f9fa;
+    padding: 60px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.story-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.story-text p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Fixed Story Image - No Overlay, Perfect Fit */
+.story-image {
+    background: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: contain; /* Shows entire image without cropping */
+    object-position: center;
+    display: block;
+}
+
+/* Alternative if you want image to cover the box completely */
+.story-img.cover {
+    object-fit: cover; /* Covers box completely, may crop edges */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .story-section {
+        padding: 30px;
+    }
+    
+    .story-image {
+        max-height: 300px;
+    }
+    
+    .story-img {
+        max-height: 300px;
+    }
+}
+header {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.logo h2 {
+    color: #00d2ff;
+}
+
+nav a {
+    color: #e0e0e0;
+}
+
+nav a:hover {
+    background: #00d2ff;
+    color: #0f2027;
+}
